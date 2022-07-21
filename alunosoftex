@@ -1,0 +1,29 @@
+algoritmo "melhorcategoriadehabiliçao"
+var
+   roda, pessoa:inteiro
+   kg:real
+inicio
+      Escreval(" Melhor categoria de habilitação.")
+      Escreva("Digite o número de rodas(somente número): ")
+      Leia(roda)
+      Escreva("Digite o número de pessoas(somente número): ")
+      Leia(pessoa)
+      Escreva("Digite o peso do véiculo(em Kg): ")
+      Leia(kg)
+      Se (roda<=3) entao
+         Escreva("A melhor categoria para sua habilitação é a categoria A.")
+      fimse
+      Se (roda=4) e (pessoa<=8) e (kg<3500) entao
+         Escreva("A melhor categoria para sua habilitação é a categoria B.")
+      fimse
+      Se (roda>=4) e (pessoa<=8) e (kg>=3500) e (kg<=6000) entao
+         Escreva("A melhor categoria para sua habilitação é a categoria C.")
+      fimse
+      Se (roda>=4) e (pessoa>8) e (kg<6000) entao
+         Escreva("A melhor categoria para sua habilitação é a categoria D.")
+      fimse
+      Se (roda>=4) e (kg>=6000) e (pessoa>8) entao
+         Escreva("A melhor categoria para sua habilitação é a categoria E.")
+      fimse
+      
+fimalgoritmo
